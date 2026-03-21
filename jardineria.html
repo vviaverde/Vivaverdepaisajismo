@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jardinería y Paisajismo en Granada | Verde Vivo</title>
+<meta name="description" content="Diseño y mantenimiento de jardines en Granada. Paisajismo, jardines verticales, terrazas y piscinas. Presupuesto gratuito. ☎ 600 000 000">
+<meta name="keywords" content="jardinería Granada, paisajismo Granada, mantenimiento jardines Granada, diseño jardines Granada, jardines verticales Granada">
+<link rel="canonical" href="https://www.verdevivo.es">
+<meta property="og:title" content="Verde Vivo · Paisajismo y Jardinería en Granada">
+<meta property="og:description" content="Transformamos espacios en jardines únicos. Más de 320 proyectos en Granada y Andalucía.">
+<meta property="og:url" content="https://www.verdevivo.es">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Verde Vivo Paisajismo y Jardinería",
+  "description": "Diseño y mantenimiento de jardines en Granada. Paisajismo, jardines verticales, terrazas y piscinas.",
+  "url": "https://www.verdevivo.es",
+  "telephone": "+34600000000",
+  "email": "info@verdevivo.es",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Granada",
+    "addressRegion": "Andalucía",
+    "addressCountry": "ES"
+  },
+  "areaServed": ["Granada", "Armilla", "Ogíjares", "La Zubia", "Pinos Genil", "Cenes de la Vega"],
+  "priceRange": "€€",
+  "openingHours": "Mo-Fr 08:00-18:00",
+  "sameAs": [
+    "https://www.instagram.com/verdevivo.granada"
+  ]
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --verde-oscuro: #1a2e1a;
+    --verde-musgo: #3d5a2e;
+    --verde-salvia: #7a9e6a;
+    --verde-claro: #b8d4a0;
+    --crema: #f5f0e8;
+    --tierra: #c4a882;
+    --oro: #c9a84c;
+    --blanco: #fdfaf5;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--blanco);
+    color: var(--verde-oscuro);
+    overflow-x: hidden;
+    cursor: none;
+  }
+
+  /* Custom cursor */
+  .cursor {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--verde-musgo);
+    position: fixed; top: 0; left: 0;
+    pointer-events: none; z-index: 9999;
+    transition: transform 0.15s ease, width 0.2s, height 0.2s;
+    transform: translate(-50%, -50%);
+  }
+  .cursor-ring {
+    width: 36px; height: 36px;
+    border: 1px solid var(--verde-salvia);
+    border-radius: 50%;
+    position: fixed; top: 0; left: 0;
+    pointer-events: none; z-index: 9998;
+    transition: transform 0.35s ease;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    padding: 24px 60px;
+    display: flex; justify-content: space-between; align-items: center;
+    mix-blend-mode: normal;
+    transition: background 0.4s, padding 0.4s;
+  }
+  nav.scrolled {
+    background: rgba(253,250,245,0.95);
+    backdrop-filter: blur(12px);
+    padding: 16px 60px;
+    box-shadow: 0 1px 30px rgba(26,46,26,0.08);
+  }
+  .logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: var(--verde-oscuro);
+    text-decoration: none;
+  }
+  .logo span { color: var(--verde-salvia); font-style: italic; }
+  .nav-links {
+    display: flex; gap: 40px; list-style: none;
+  }
+  .nav-links a {
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--verde-oscuro);
+    transition: color 0.3s;
+    position: relative;
+  }
+  .nav-links a::after {
+    content: '';
+    position: absolute; bottom: -4px; left: 0;
+    width: 0; height: 1px;
+    background: var(--verde-salvia);
+    transition: width 0.3s;
+  }
+  .nav-links a:hover { color: var(--verde-musgo); }
+  .nav-links a:hover::after { width: 100%; }
+  .nav-cta {
+    background: var(--verde-musgo);
+    color: var(--crema) !important;
+    padding: 10px 24px;
+    border-radius: 2px;
+    font-weight: 400 !important;
+    transition: background 0.3s !important;
+  }
+  .nav-cta:hover { background: var(--verde-oscuro) !important; }
+  .nav-cta::after { display: none !important; }
+
+  /* HERO */
+  .hero {
+    height: 100vh;
+    position: relative;
+    display: flex; align-items: center;
+    overflow: hidden;
+    background: var(--verde-oscuro);
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 70% 50%, rgba(61,90,46,0.6) 0%, transparent 60%),
+      radial-gradient(ellipse at 20% 80%, rgba(122,158,106,0.3) 0%, transparent 50%),
+      var(--verde-oscuro);
+  }
+  /* Botanical SVG overlay */
+  .hero-botanical {
+    position: absolute; right: -60px; top: -40px;
+    width: 65%;
+    opacity: 0.12;
+    animation: sway 8s ease-in-out infinite;
+  }
+  @keyframes sway {
+    0%, 100% { transform: rotate(-1deg) scale(1); }
+    50% { transform: rotate(1.5deg) scale(1.02); }
+  }
+  .hero-content {
+    position: relative; z-index: 2;
+    padding: 0 60px;
+    max-width: 700px;
+    animation: fadeUp 1.2s ease both;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-tag {
+    font-size: 0.72rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--verde-salvia);
+    margin-bottom: 24px;
+    display: flex; align-items: center; gap: 12px;
+    animation: fadeUp 1.2s 0.2s ease both;
+    opacity: 0;
+  }
+  .hero-tag::before {
+    content: '';
+    width: 40px; height: 1px;
+    background: var(--verde-salvia);
+  }
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.2rem, 6vw, 5.5rem);
+    font-weight: 300;
+    line-height: 1.08;
+    color: var(--crema);
+    margin-bottom: 28px;
+    animation: fadeUp 1.2s 0.35s ease both;
+    opacity: 0;
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--verde-claro);
+  }
+  .hero-desc {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.8;
+    color: rgba(245,240,232,0.7);
+    max-width: 480px;
+    margin-bottom: 48px;
+    animation: fadeUp 1.2s 0.5s ease both;
+    opacity: 0;
+  }
+  .hero-btns {
+    display: flex; gap: 20px; flex-wrap: wrap;
+    animation: fadeUp 1.2s 0.65s ease both;
+    opacity: 0;
+  }
+  .btn-prim {
+    background: var(--verde-salvia);
+    color: var(--verde-oscuro);
+    padding: 16px 36px;
+    border: none; border-radius: 2px;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: none;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
+  }
+  .btn-prim:hover { background: var(--verde-claro); transform: translateY(-2px); }
+  .btn-sec {
+    background: transparent;
+    color: var(--crema);
+    padding: 16px 36px;
+    border: 1px solid rgba(245,240,232,0.3);
+    border-radius: 2px;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: none;
+    transition: border-color 0.3s, background 0.3s;
+    display: inline-block;
+  }
+  .btn-sec:hover { border-color: var(--verde-salvia); background: rgba(122,158,106,0.1); }
+  .hero-scroll {
+    position: absolute; bottom: 40px; left: 50%;
+    transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    animation: fadeUp 1.2s 1s ease both;
+    opacity: 0;
+  }
+  .hero-scroll span {
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.4);
+  }
+  .scroll-line {
+    width: 1px; height: 50px;
+    background: linear-gradient(to bottom, rgba(122,158,106,0.8), transparent);
+    animation: scrollDown 2s ease-in-out infinite;
+  }
+  @keyframes scrollDown {
+    0% { transform: scaleY(0); transform-origin: top; }
+    50% { transform: scaleY(1); transform-origin: top; }
+    51% { transform: scaleY(1); transform-origin: bottom; }
+    100% { transform: scaleY(0); transform-origin: bottom; }
+  }
+
+  /* STATS */
+  .stats {
+    background: var(--crema);
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 1px solid rgba(122,158,106,0.2);
+  }
+  .stat {
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid rgba(122,158,106,0.2);
+  }
+  .stat:last-child { border-right: none; }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--verde-musgo);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat-num span { color: var(--oro); }
+  .stat-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--verde-salvia);
+    font-weight: 300;
+  }
+
+  /* SECTION HEADER */
+  .section-header {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .section-tag {
+    font-size: 0.7rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--verde-salvia);
+    margin-bottom: 16px;
+    display: flex; align-items: center; justify-content: center; gap: 16px;
+  }
+  .section-tag::before, .section-tag::after {
+    content: '';
+    width: 30px; height: 1px;
+    background: var(--verde-salvia);
+  }
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--verde-oscuro);
+  }
+  h2 em { font-style: italic; color: var(--verde-musgo); }
+  .section-sub {
+    font-size: 0.95rem;
+    font-weight: 200;
+    line-height: 1.8;
+    color: #666;
+    max-width: 520px;
+    margin: 16px auto 0;
+  }
+
+  /* SERVICIOS */
+  .servicios {
+    padding: 100px 60px;
+    background: var(--blanco);
+  }
+  .servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: rgba(122,158,106,0.15);
+  }
+  .servicio-card {
+    background: var(--blanco);
+    padding: 50px 40px;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.4s;
+    cursor: none;
+  }
+  .servicio-card::before {
+    content: '';
+    position: absolute; bottom: 0; left: 0;
+    width: 100%; height: 3px;
+    background: linear-gradient(to right, var(--verde-salvia), var(--verde-claro));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s;
+  }
+  .servicio-card:hover { background: var(--crema); }
+  .servicio-card:hover::before { transform: scaleX(1); }
+  .servicio-icon {
+    width: 56px; height: 56px;
+    margin-bottom: 28px;
+    opacity: 0.85;
+  }
+  .servicio-num {
+    position: absolute; top: 30px; right: 30px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: rgba(122,158,106,0.12);
+    line-height: 1;
+  }
+  h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--verde-oscuro);
+    margin-bottom: 14px;
+  }
+  .servicio-desc {
+    font-size: 0.88rem;
+    font-weight: 200;
+    line-height: 1.85;
+    color: #666;
+    margin-bottom: 24px;
+  }
+  .servicio-link {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--verde-musgo);
+    text-decoration: none;
+    display: flex; align-items: center; gap: 10px;
+    font-weight: 400;
+    transition: gap 0.3s;
+  }
+  .servicio-link:hover { gap: 16px; }
+  .servicio-link::after {
+    content: '→';
+    font-size: 1rem;
+  }
+
+  /* PROCESO */
+  .proceso {
+    padding: 100px 60px;
+    background: var(--verde-oscuro);
+    position: relative;
+    overflow: hidden;
+  }
+  .proceso::before {
+    content: '';
+    position: absolute; top: 0; right: 0;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(122,158,106,0.08) 0%, transparent 70%);
+  }
+  .proceso .section-tag { color: var(--verde-claro); }
+  .proceso .section-tag::before, .proceso .section-tag::after { background: var(--verde-claro); }
+  .proceso h2 { color: var(--crema); }
+  .proceso .section-sub { color: rgba(245,240,232,0.5); }
+  .proceso-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 70px;
+    position: relative;
+  }
+  .proceso-steps::before {
+    content: '';
+    position: absolute; top: 28px; left: 10%;
+    width: 80%; height: 1px;
+    background: linear-gradient(to right, transparent, rgba(122,158,106,0.4), transparent);
+  }
+  .step {
+    text-align: center;
+    position: relative;
+  }
+  .step-circle {
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    border: 1px solid rgba(122,158,106,0.4);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 28px;
+    background: var(--verde-oscuro);
+    position: relative; z-index: 1;
+    transition: border-color 0.3s, background 0.3s;
+  }
+  .step:hover .step-circle {
+    border-color: var(--verde-salvia);
+    background: rgba(122,158,106,0.15);
+  }
+  .step-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--verde-salvia);
+  }
+  .step h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--crema);
+    margin-bottom: 12px;
+  }
+  .step p {
+    font-size: 0.82rem;
+    font-weight: 200;
+    line-height: 1.8;
+    color: rgba(245,240,232,0.5);
+  }
+
+  /* PROYECTOS */
+  .proyectos {
+    padding: 100px 60px;
+    background: var(--crema);
+  }
+  .proyectos-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 16px;
+    margin-top: 70px;
+  }
+  .proyecto-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    cursor: none;
+    background: var(--verde-oscuro);
+  }
+  .proyecto-item:first-child {
+    grid-row: 1 / 3;
+  }
+  .proyecto-bg {
+    width: 100%; height: 100%;
+    min-height: 240px;
+    display: flex; align-items: flex-end;
+    padding: 30px;
+    position: relative;
+    transition: transform 0.6s ease;
+  }
+  .proyecto-item:first-child .proyecto-bg { min-height: 500px; }
+  .proyecto-item:hover .proyecto-bg { transform: scale(1.04); }
+  /* Simulated garden images with CSS gradients */
+  .p1 { background: linear-gradient(160deg, #2d4a1e 0%, #1a2e1a 30%, #3d5a2e 60%, #4a7a35 100%); }
+  .p2 { background: linear-gradient(135deg, #3d6b2e 0%, #1a3a1a 50%, #5a8a45 100%); }
+  .p3 { background: linear-gradient(135deg, #1a2e1a 0%, #4a6a35 60%, #3d5a2e 100%); }
+  .p4 { background: linear-gradient(135deg, #2e4a1a 0%, #1a2e0e 50%, #3a5a25 100%); }
+  .p5 { background: linear-gradient(135deg, #1e3a1e 0%, #2d5a20 60%, #4a7a3a 100%); }
+  /* leaf/plant texture overlays */
+  .p1::before, .p2::before, .p3::before, .p4::before, .p5::before {
+    content: '';
+    position: absolute; inset: 0;
+    opacity: 0.15;
+    background-image: radial-gradient(circle at 20% 30%, rgba(122,158,106,0.6) 0%, transparent 30%),
+                      radial-gradient(circle at 70% 70%, rgba(184,212,160,0.4) 0%, transparent 25%),
+                      radial-gradient(circle at 50% 10%, rgba(61,90,46,0.5) 0%, transparent 40%);
+  }
+  .proyecto-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(26,46,26,0.9) 0%, transparent 60%);
+    transition: opacity 0.4s;
+  }
+  .proyecto-info {
+    position: relative; z-index: 2;
+  }
+  .proyecto-cat {
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--verde-claro);
+    margin-bottom: 6px;
+  }
+  .proyecto-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-weight: 300;
+    color: var(--crema);
+  }
+  .proyecto-item:first-child .proyecto-title { font-size: 2rem; }
+
+  /* TESTIMONIOS */
+  .testimonios {
+    padding: 100px 60px;
+    background: var(--blanco);
+  }
+  .testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 70px;
+  }
+  .testimonio {
+    padding: 40px;
+    border: 1px solid rgba(122,158,106,0.2);
+    border-radius: 3px;
+    position: relative;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .testimonio:hover {
+    border-color: rgba(122,158,106,0.5);
+    box-shadow: 0 10px 40px rgba(61,90,46,0.08);
+  }
+  .testimonio::before {
+    content: '"';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    line-height: 1;
+    color: var(--verde-claro);
+    opacity: 0.5;
+    position: absolute; top: 20px; right: 28px;
+  }
+  .testimonio-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--verde-oscuro);
+    margin-bottom: 28px;
+  }
+  .testimonio-autor {
+    display: flex; align-items: center; gap: 16px;
+  }
+  .autor-avatar {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--verde-musgo), var(--verde-salvia));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    color: var(--crema);
+    font-weight: 300;
+  }
+  .autor-nombre {
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: var(--verde-oscuro);
+  }
+  .autor-lugar {
+    font-size: 0.75rem;
+    font-weight: 200;
+    color: #999;
+    margin-top: 2px;
+  }
+  .estrellas {
+    margin-bottom: 20px;
+    color: var(--oro);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+  }
+
+  /* CTA BANNER */
+  .cta-banner {
+    padding: 100px 60px;
+    background: linear-gradient(135deg, var(--verde-musgo) 0%, var(--verde-oscuro) 60%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-banner::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 50% 50%, rgba(184,212,160,0.08) 0%, transparent 60%);
+  }
+  .cta-banner h2 {
+    color: var(--crema);
+    margin-bottom: 20px;
+  }
+  .cta-banner p {
+    font-size: 1rem;
+    font-weight: 200;
+    color: rgba(245,240,232,0.65);
+    max-width: 500px;
+    margin: 0 auto 48px;
+    line-height: 1.8;
+  }
+  .cta-btns {
+    display: flex; gap: 20px; justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* CONTACTO */
+  .contacto {
+    padding: 100px 60px;
+    background: var(--crema);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .contacto-info h2 { text-align: left; margin-bottom: 20px; }
+  .contacto-info p {
+    font-size: 0.92rem;
+    font-weight: 200;
+    line-height: 1.85;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  .contacto-datos {
+    display: flex; flex-direction: column; gap: 20px;
+  }
+  .dato {
+    display: flex; align-items: center; gap: 16px;
+    font-size: 0.88rem;
+    font-weight: 300;
+    color: var(--verde-oscuro);
+  }
+  .dato-icon {
+    width: 40px; height: 40px;
+    background: rgba(122,158,106,0.15);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .contacto-form {
+    display: flex; flex-direction: column; gap: 20px;
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group {
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  label {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--verde-salvia);
+    font-weight: 400;
+  }
+  input, select, textarea {
+    background: var(--blanco);
+    border: 1px solid rgba(122,158,106,0.25);
+    border-radius: 2px;
+    padding: 14px 18px;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 200;
+    color: var(--verde-oscuro);
+    outline: none;
+    transition: border-color 0.3s;
+    cursor: none;
+  }
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--verde-salvia);
+  }
+  textarea { resize: vertical; min-height: 120px; }
+  select { appearance: none; }
+
+  /* FOOTER */
+  footer {
+    background: var(--verde-oscuro);
+    padding: 70px 60px 40px;
+    color: rgba(245,240,232,0.6);
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(122,158,106,0.15);
+    margin-bottom: 40px;
+  }
+  .footer-brand .logo { display: block; margin-bottom: 16px; color: var(--crema); }
+  .footer-brand p {
+    font-size: 0.82rem;
+    font-weight: 200;
+    line-height: 1.8;
+    color: rgba(245,240,232,0.45);
+    max-width: 260px;
+  }
+  .footer-col h5 {
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--verde-salvia);
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  .footer-col ul {
+    list-style: none;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .footer-col a {
+    color: rgba(245,240,232,0.45);
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 200;
+    transition: color 0.3s;
+  }
+  .footer-col a:hover { color: var(--verde-claro); }
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 20px;
+  }
+  .footer-bottom p {
+    font-size: 0.75rem;
+    font-weight: 200;
+    color: rgba(245,240,232,0.3);
+  }
+  .social-links {
+    display: flex; gap: 16px;
+  }
+  .social-link {
+    width: 36px; height: 36px;
+    border: 1px solid rgba(122,158,106,0.25);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: rgba(245,240,232,0.45);
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: border-color 0.3s, color 0.3s;
+  }
+  .social-link:hover {
+    border-color: var(--verde-salvia);
+    color: var(--verde-claro);
+  }
+
+  /* Scroll animations */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
+  @media (max-width: 900px) {
+    nav { padding: 20px 24px; }
+    nav.scrolled { padding: 14px 24px; }
+    .nav-links { display: none; }
+    .hero-content { padding: 0 24px; }
+    .stats { grid-template-columns: repeat(2,1fr); padding: 40px 24px; }
+    .servicios, .proceso, .proyectos, .testimonios, .cta-banner, .contacto { padding: 70px 24px; }
+    .servicios-grid, .testimonios-grid { grid-template-columns: 1fr; }
+    .proceso-steps { grid-template-columns: 1fr 1fr; }
+    .proyectos-grid { grid-template-columns: 1fr; }
+    .proyecto-item:first-child { grid-row: auto; }
+    .contacto { grid-template-columns: 1fr; gap: 40px; }
+    .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .form-row { grid-template-columns: 1fr; }
+    body { cursor: auto; }
+    .cursor, .cursor-ring { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="logo">Verde <span>Vivo</span></a>
+  <ul class="nav-links">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="#contacto" class="nav-cta">Presupuesto</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <svg class="hero-botanical" viewBox="0 0 800 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Botanical illustration in SVG -->
+    <g stroke="rgba(184,212,160,1)" stroke-width="1.5" fill="none">
+      <!-- Main stem -->
+      <path d="M400 900 Q390 700 370 500 Q350 300 380 100" />
+      <!-- Branches left -->
+      <path d="M375 750 Q300 700 220 680 Q160 665 100 640"/>
+      <path d="M368 620 Q290 560 200 520 Q140 495 80 470"/>
+      <path d="M372 490 Q310 440 250 390 Q200 350 160 300"/>
+      <!-- Branches right -->
+      <path d="M378 800 Q450 760 530 750 Q590 743 650 720"/>
+      <path d="M373 660 Q450 610 530 580 Q600 555 670 520"/>
+      <path d="M376 530 Q440 490 510 460 Q570 435 630 400"/>
+      <!-- Large leaves left -->
+      <path d="M220 680 Q180 640 160 590 Q180 620 240 640 Q220 680 220 680Z" fill="rgba(61,90,46,0.3)"/>
+      <path d="M200 520 Q150 470 140 410 Q170 450 220 480 Q200 520 200 520Z" fill="rgba(61,90,46,0.3)"/>
+      <path d="M250 390 Q210 330 215 270 Q235 320 270 360 Q250 390 250 390Z" fill="rgba(61,90,46,0.3)"/>
+      <!-- Large leaves right -->
+      <path d="M530 750 Q570 710 600 660 Q570 695 520 720 Q530 750 530 750Z" fill="rgba(61,90,46,0.3)"/>
+      <path d="M530 580 Q580 540 610 490 Q575 525 525 555 Q530 580 530 580Z" fill="rgba(61,90,46,0.3)"/>
+      <path d="M510 460 Q560 415 580 360 Q550 405 500 435 Q510 460 510 460Z" fill="rgba(61,90,46,0.3)"/>
+      <!-- Small detail lines -->
+      <path d="M220 680 Q215 670 218 660" stroke-width="0.5"/>
+      <path d="M530 750 Q537 742 534 732" stroke-width="0.5"/>
+    </g>
+  </svg>
+  <div class="hero-content">
+    <p class="hero-tag">Paisajismo profesional · Granada</p>
+    <h1>Jardines que<br><em>inspiran</em> y<br>perduran</h1>
+    <p class="hero-desc">Diseñamos y cuidamos espacios verdes únicos que transforman cualquier entorno en un oasis de naturaleza, belleza y bienestar.</p>
+    <div class="hero-btns">
+      <a href="#contacto" class="btn-prim">Solicitar presupuesto</a>
+      <a href="#proyectos" class="btn-sec">Ver proyectos</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Descubrir</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat reveal">
+    <div class="stat-num">12<span>+</span></div>
+    <div class="stat-label">Años de experiencia</div>
+  </div>
+  <div class="stat reveal reveal-delay-1">
+    <div class="stat-num">320<span>+</span></div>
+    <div class="stat-label">Proyectos realizados</div>
+  </div>
+  <div class="stat reveal reveal-delay-2">
+    <div class="stat-num">98<span>%</span></div>
+    <div class="stat-label">Clientes satisfechos</div>
+  </div>
+  <div class="stat reveal reveal-delay-3">
+    <div class="stat-num">8</div>
+    <div class="stat-label">Premios de diseño</div>
+  </div>
+</div>
+
+<!-- SERVICIOS -->
+<section class="servicios" id="servicios">
+  <div class="section-header reveal">
+    <p class="section-tag">Lo que ofrecemos</p>
+    <h2>Nuestros <em>servicios</em></h2>
+    <p class="section-sub">Soluciones integrales de paisajismo para espacios residenciales, corporativos y públicos.</p>
+  </div>
+
+  <div class="servicios-grid">
+    <div class="servicio-card reveal">
+      <div class="servicio-num">01</div>
+      <svg class="servicio-icon" viewBox="0 0 56 56" fill="none">
+        <path d="M28 48 Q20 36 14 24 Q8 12 28 8 Q48 12 42 24 Q36 36 28 48Z" stroke="#3d5a2e" stroke-width="1.5" fill="rgba(122,158,106,0.1)"/>
+        <path d="M28 8 L28 48" stroke="#3d5a2e" stroke-width="0.5"/>
+      </svg>
+      <h3>Diseño de jardines</h3>
+      <p class="servicio-desc">Creamos jardines a medida con planos detallados, selección de plantas adaptadas al clima y estilo personal. Cada proyecto es único.</p>
+      <a href="#contacto" class="servicio-link">Más información</a>
+    </div>
+    <div class="servicio-card reveal reveal-delay-1">
+      <div class="servicio-num">02</div>
+      <svg class="servicio-icon" viewBox="0 0 56 56" fill="none">
+        <circle cx="28" cy="28" r="18" stroke="#3d5a2e" stroke-width="1.5" fill="rgba(122,158,106,0.1)"/>
+        <path d="M28 10 L28 46 M10 28 L46 28" stroke="#3d5a2e" stroke-width="0.8"/>
+        <path d="M16 16 L40 40 M40 16 L16 40" stroke="#3d5a2e" stroke-width="0.5"/>
+      </svg>
+      <h3>Paisajismo urbano</h3>
+      <p class="servicio-desc">Integramos la naturaleza en el entorno urbano: jardines verticales, azoteas verdes, parterres y zonas ajardinadas para comunidades.</p>
+      <a href="#contacto" class="servicio-link">Más información</a>
+    </div>
+    <div class="servicio-card reveal reveal-delay-2">
+      <div class="servicio-num">03</div>
+      <svg class="servicio-icon" viewBox="0 0 56 56" fill="none">
+        <path d="M12 44 L12 20 Q12 12 20 12 Q28 12 28 20 Q28 12 36 12 Q44 12 44 20 L44 44" stroke="#3d5a2e" stroke-width="1.5" fill="rgba(122,158,106,0.1)"/>
+        <path d="M8 44 L48 44" stroke="#3d5a2e" stroke-width="1.5"/>
+      </svg>
+      <h3>Piscinas y jardines acuáticos</h3>
+      <p class="servicio-desc">Diseñamos entornos acuáticos elegantes: piscinas naturales, estanques, fuentes y sistemas de riego eficientes e inteligentes.</p>
+      <a href="#contacto" class="servicio-link">Más información</a>
+    </div>
+    <div class="servicio-card reveal">
+      <div class="servicio-num">04</div>
+      <svg class="servicio-icon" viewBox="0 0 56 56" fill="none">
+        <path d="M28 44 Q16 36 12 24 Q10 14 28 12 Q46 14 44 24 Q40 36 28 44Z" stroke="#3d5a2e" stroke-width="1.5" fill="rgba(122,158,106,0.1)"/>
+        <path d="M28 12 L28 44 M16 22 Q22 24 28 22 Q34 24 40 22" stroke="#3d5a2e" stroke-width="0.5"/>
+      </svg>
+      <h3>Mantenimiento integral</h3>
+      <p class="servicio-desc">Servicio periódico de poda, abonado, control fitosanitario y riego para que tu jardín luzca impecable durante todo el año.</p>
+      <a href="#contacto" class="servicio-link">Más información</a>
+    </div>
+    <div class="servicio-card reveal reveal-delay-1">
+      <div class="servicio-num">05</div>
+      <svg class="servicio-icon" viewBox="0 0 56 56" fill="none">
+        <rect x="10" y="20" width="36" height="24" rx="2" stroke="#3d5a2e" stroke-width="1.5" fill="rgba(122,158,106,0.1)"/>
+        <path d="M10 28 L46 28 M28 20 L28 44" stroke="#3d5a2e" stroke-width="0.5"/>
+        <path d="M18 12 Q28 8 38 12" stroke="#3d5a2e" stroke-width="1.5"/>
+      </svg>
+      <h3>Terrazas y espacios exteriores</h3>
+      <p class="servicio-desc">Transformamos terrazas, balcones y patios en extensiones habitables y naturales de tu hogar con mobiliario, iluminación y vegetación.</p>
+      <a href="#contacto" class="servicio-link">Más información</a>
+    </div>
+    <div class="servicio-card reveal reveal-delay-2">
+      <div class="servicio-num">06</div>
+      <svg class="servicio-icon" viewBox="0 0 56 56" fill="none">
+        <path d="M20 44 L20 24 Q20 18 26 16 Q32 14 34 20" stroke="#3d5a2e" stroke-width="1.5" fill="rgba(122,158,106,0.1)"/>
+        <path d="M20 30 Q26 26 32 28 Q38 30 38 36 Q38 44 30 44 L20 44" stroke="#3d5a2e" stroke-width="1.5" fill="rgba(122,158,106,0.1)"/>
+        <circle cx="38" cy="20" r="6" stroke="#3d5a2e" stroke-width="1.5" fill="rgba(122,158,106,0.1)"/>
+      </svg>
+      <h3>Consultoría y asesoría verde</h3>
+      <p class="servicio-desc">Asesoramos sobre selección de plantas, sostenibilidad, jardines ecológicos y biodiversidad para empresas, comunidades e instituciones.</p>
+      <a href="#contacto" class="servicio-link">Más información</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="proceso" id="proceso">
+  <div class="section-header reveal">
+    <p class="section-tag">Cómo trabajamos</p>
+    <h2>Nuestro <em>proceso</em></h2>
+    <p class="section-sub">Un método preciso y transparente para garantizar resultados extraordinarios en cada proyecto.</p>
+  </div>
+  <div class="proceso-steps">
+    <div class="step reveal">
+      <div class="step-circle"><span class="step-num">I</span></div>
+      <h4>Consulta inicial</h4>
+      <p>Escuchamos tu visión, analizamos el espacio y definimos los objetivos del proyecto juntos.</p>
+    </div>
+    <div class="step reveal reveal-delay-1">
+      <div class="step-circle"><span class="step-num">II</span></div>
+      <h4>Diseño y propuesta</h4>
+      <p>Elaboramos planos, renders y una selección de plantas adaptadas al espacio y tus preferencias.</p>
+    </div>
+    <div class="step reveal reveal-delay-2">
+      <div class="step-circle"><span class="step-num">III</span></div>
+      <h4>Ejecución</h4>
+      <p>Nuestro equipo especializado lleva a cabo el proyecto con materiales de primera calidad.</p>
+    </div>
+    <div class="step reveal reveal-delay-3">
+      <div class="step-circle"><span class="step-num">IV</span></div>
+      <h4>Seguimiento</h4>
+      <p>Te acompañamos con mantenimiento y garantía para que tu jardín crezca y perdure en el tiempo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROYECTOS -->
+<section class="proyectos" id="proyectos">
+  <div class="section-header reveal">
+    <p class="section-tag">Nuestro trabajo</p>
+    <h2>Proyectos <em>destacados</em></h2>
+    <p class="section-sub">Una selección de espacios que hemos transformado en Granada y toda Andalucía.</p>
+  </div>
+  <div class="proyectos-grid">
+    <div class="proyecto-item reveal">
+      <div class="proyecto-bg p1">
+        <div class="proyecto-overlay"></div>
+        <div class="proyecto-info">
+          <p class="proyecto-cat">Residencial · Albaicín</p>
+          <p class="proyecto-title">Jardín mediterráneo con patio andaluz</p>
+        </div>
+      </div>
+    </div>
+    <div class="proyecto-item reveal reveal-delay-1">
+      <div class="proyecto-bg p2">
+        <div class="proyecto-overlay"></div>
+        <div class="proyecto-info">
+          <p class="proyecto-cat">Corporativo</p>
+          <p class="proyecto-title">Jardín vertical oficinas</p>
+        </div>
+      </div>
+    </div>
+    <div class="proyecto-item reveal reveal-delay-2">
+      <div class="proyecto-bg p3">
+        <div class="proyecto-overlay"></div>
+        <div class="proyecto-info">
+          <p class="proyecto-cat">Terraza</p>
+          <p class="proyecto-title">Azotea verde en Realejo</p>
+        </div>
+      </div>
+    </div>
+    <div class="proyecto-item reveal reveal-delay-1">
+      <div class="proyecto-bg p4">
+        <div class="proyecto-overlay"></div>
+        <div class="proyecto-info">
+          <p class="proyecto-cat">Acuático</p>
+          <p class="proyecto-title">Piscina natural con jardín</p>
+        </div>
+      </div>
+    </div>
+    <div class="proyecto-item reveal reveal-delay-2">
+      <div class="proyecto-bg p5">
+        <div class="proyecto-overlay"></div>
+        <div class="proyecto-info">
+          <p class="proyecto-cat">Comunidad</p>
+          <p class="proyecto-title">Parque urbano sostenible</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="testimonios">
+  <div class="section-header reveal">
+    <p class="section-tag">Lo que dicen</p>
+    <h2>Clientes <em>satisfechos</em></h2>
+  </div>
+  <div class="testimonios-grid">
+    <div class="testimonio reveal">
+      <div class="estrellas">★★★★★</div>
+      <p class="testimonio-text">Transformaron nuestro patio en un jardín precioso. El resultado superó todas nuestras expectativas y el equipo fue un placer durante todo el proceso.</p>
+      <div class="testimonio-autor">
+        <div class="autor-avatar">M</div>
+        <div>
+          <p class="autor-nombre">María Fernández</p>
+          <p class="autor-lugar">Albaicín, Granada</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonio reveal reveal-delay-1">
+      <div class="estrellas">★★★★★</div>
+      <p class="testimonio-text">El jardín vertical que instalaron en nuestras oficinas ha mejorado el ambiente de trabajo notablemente. Profesionalidad y calidad en cada detalle.</p>
+      <div class="testimonio-autor">
+        <div class="autor-avatar">J</div>
+        <div>
+          <p class="autor-nombre">Javier Ruiz</p>
+          <p class="autor-lugar">Centro empresarial, Granada</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonio reveal reveal-delay-2">
+      <div class="estrellas">★★★★★</div>
+      <p class="testimonio-text">Llevamos tres años con el servicio de mantenimiento y siempre impecable. Son puntuales, cuidadosos y se nota que aman lo que hacen.</p>
+      <div class="testimonio-autor">
+        <div class="autor-avatar">A</div>
+        <div>
+          <p class="autor-nombre">Ana Morales</p>
+          <p class="autor-lugar">Chana, Granada</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <h2>¿Listo para <em>transformar</em><br>tu espacio?</h2>
+  <p>Cuéntanos tu proyecto y te preparamos un presupuesto sin compromiso en menos de 48 horas.</p>
+  <div class="cta-btns">
+    <a href="#contacto" class="btn-prim">Solicitar presupuesto gratuito</a>
+    <a href="https://wa.me/34600000000?text=Hola%2C%20me%20interesa%20un%20presupuesto%20de%20jarden%C3%ADa" target="_blank" class="btn-sec">💬 WhatsApp</a>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto" id="contacto">
+  <div class="contacto-info reveal">
+    <p class="section-tag" style="justify-content:flex-start;">Contacto</p>
+    <h2>Hablemos de<br>tu <em>jardín</em></h2>
+    <p>Nos encantaría conocer tu proyecto. Rellena el formulario o contáctanos directamente y te respondemos en breve.</p>
+    <div class="contacto-datos">
+      <div class="dato">
+        <div class="dato-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3d5a2e" stroke-width="1.5">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+        </div>
+        Granada, Andalucía — Servicio en toda la provincia
+      </div>
+      <div class="dato">
+        <div class="dato-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3d5a2e" stroke-width="1.5">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+        </div>
+        +34 600 000 000
+      </div>
+      <div class="dato">
+        <div class="dato-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3d5a2e" stroke-width="1.5">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </div>
+        <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ed84838b82ad9b889f89889b849b82c3889e">[email&#160;protected]</a>
+      </div>
+    </div>
+  </div>
+
+  <form class="contacto-form reveal reveal-delay-1" onsubmit="return false;">
+    <div class="form-row">
+      <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" placeholder="Tu nombre">
+      </div>
+      <div class="form-group">
+        <label>Teléfono</label>
+        <input type="tel" placeholder="+34 600 000 000">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" placeholder="tu@email.com">
+    </div>
+    <div class="form-group">
+      <label>Servicio de interés</label>
+      <select>
+        <option value="">Selecciona un servicio…</option>
+        <option>Diseño de jardines</option>
+        <option>Paisajismo urbano</option>
+        <option>Piscinas y jardines acuáticos</option>
+        <option>Mantenimiento integral</option>
+        <option>Terrazas y espacios exteriores</option>
+        <option>Consultoría verde</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Cuéntanos tu proyecto</label>
+      <textarea placeholder="Describe brevemente tu espacio y lo que buscas…"></textarea>
+    </div>
+    <button type="submit" class="btn-prim" style="cursor:none; border:none; width:100%; text-align:center;">Enviar solicitud</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#" class="logo">Verde <span>Vivo</span></a>
+      <p>Paisajismo y jardinería de autor en Granada. Transformamos espacios en naturaleza viva desde 2012.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Servicios</h5>
+      <ul>
+        <li><a href="#">Diseño de jardines</a></li>
+        <li><a href="#">Paisajismo urbano</a></li>
+        <li><a href="#">Jardines acuáticos</a></li>
+        <li><a href="#">Mantenimiento</a></li>
+        <li><a href="#">Terrazas</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Empresa</h5>
+      <ul>
+        <li><a href="#">Sobre nosotros</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Trabaja con nosotros</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Legal</h5>
+      <ul>
+        <li><a href="#">Aviso legal</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Verde Vivo · Paisajismo & Jardinería · Granada</p>
+    <div class="social-links">
+      <a href="#" class="social-link">in</a>
+      <a href="#" class="social-link">ig</a>
+      <a href="#" class="social-link">fb</a>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Custom cursor
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+    ring.style.left = e.clientX + 'px';
+    ring.style.top = e.clientY + 'px';
+  });
+  document.querySelectorAll('a, button, input, select, textarea, .servicio-card, .proyecto-item').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.transform = 'translate(-50%,-50%) scale(2)';
+      ring.style.transform = 'translate(-50%,-50%) scale(1.5)';
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.style.transform = 'translate(-50%,-50%) scale(1)';
+      ring.style.transform = 'translate(-50%,-50%) scale(1)';
+    });
+  });
+
+  // Navbar scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(r => observer.observe(r));
+
+  // Stats counter animation
+  function animateCounter(el, target, duration) {
+    let start = 0;
+    const step = target / (duration / 16);
+    const timer = setInterval(() => {
+      start += step;
+      if (start >= target) { start = target; clearInterval(timer); }
+      el.textContent = Math.floor(start);
+    }, 16);
+  }
+  const statsObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        document.querySelectorAll('.stat-num').forEach(el => {
+          const val = parseInt(el.textContent);
+          const span = el.querySelector('span');
+          el.textContent = '0';
+          if (span) el.appendChild(span);
+          animateCounter(el.childNodes[0] || el, val, 1500);
+        });
+        statsObserver.disconnect();
+      }
+    });
+  }, { threshold: 0.5 });
+  const statsSection = document.querySelector('.stats');
+  if (statsSection) statsObserver.observe(statsSection);
+</script>
+
+<style>
+  .wa-float {
+    position: fixed; bottom: 32px; right: 32px; z-index: 500;
+    display: flex; align-items: center; gap: 12px;
+    animation: waPulse 2.5s ease-in-out infinite;
+  }
+  @keyframes waPulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.06)} }
+  .wa-btn {
+    width: 58px; height: 58px; background: #25D366; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 6px 24px rgba(37,211,102,0.4);
+    text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .wa-btn:hover { transform: scale(1.1); box-shadow: 0 10px 32px rgba(37,211,102,0.55); }
+  .wa-btn svg { width: 30px; height: 30px; }
+  .wa-tooltip {
+    background: #1a2e1a; color: #f5f0e8;
+    font-family: 'Jost', sans-serif; font-size: 0.78rem; font-weight: 300;
+    padding: 8px 16px; border-radius: 2px; white-space: nowrap;
+    opacity: 0; transform: translateX(10px);
+    transition: opacity 0.3s, transform 0.3s; pointer-events: none;
+  }
+  .wa-float:hover .wa-tooltip { opacity: 1; transform: translateX(0); }
+</style>
+
+<div class="wa-float">
+  <div class="wa-tooltip">Escríbenos por WhatsApp</div>
+  <a class="wa-btn" href="https://wa.me/34600000000?text=Hola%2C%20me%20interesa%20un%20presupuesto%20de%20jarden%C3%ADa" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 3C8.82 3 3 8.82 3 16c0 2.36.63 4.57 1.73 6.48L3 29l6.72-1.7A13 13 0 0016 29c7.18 0 13-5.82 13-13S23.18 3 16 3z" fill="white"/>
+      <path d="M21.5 18.9c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.63-.93-2.24-.24-.59-.49-.51-.68-.52h-.58c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z" fill="#25D366"/>
+    </svg>
+  </a>
+</div>
+
+</body>
+</html>
